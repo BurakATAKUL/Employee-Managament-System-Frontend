@@ -1,0 +1,80 @@
+/* App.css */
+
+/* Root elemanı için stil */
+#root {
+  margin: 0 auto;
+  padding: 0; /* Padding'i sıfırla */
+  height: 100vh; /* Tam ekran yüksekliği */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Üst bileşen için stil */
+.header {
+  width: 100%; /* Tam genişlik */
+  position: fixed; /* Sayfanın üst kısmında sabitler */
+  top: 0; /* Üstten sıfır mesafe */
+  left: 0; /* Soldan sıfır mesafe */
+  box-sizing: border-box; /* Padding ve border'ı genişlik ve yüksekliğe dahil et */
+  background-color: #fff; /* Arka plan rengi */
+  z-index: 1000; /* Diğer içeriklerin üstünde olmasını sağlar */
+  margin: 0%;
+  padding: 0%;
+
+}
+/* İçerik için stil */
+.content {
+  margin-top: 4rem; /* Header yüksekliği kadar üstten boşluk bırak */
+  flex: 1; /* İçeriğin geri kalan kısmını kaplar */
+  display: flex;
+  justify-content: center; /* Yatayda ortala */
+  align-items: center; /* Dikeyde ortala */
+  padding: 2rem; /* İçerik için padding ekle */
+  box-sizing: border-box; /* Padding ve border'ı genişlik ve yüksekliğe dahil et */
+}
+/* Diğer stiller */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Alt bileşen için stil */
+.footer {
+  
+  width: 100vw; /* Tam genişlik */
+  padding: 1rem; /* İçerik için padding ekle */
+  text-align: center; /* İçeriği ortala */
+  background-color: #000; /* Arka plan rengi: Siyah */
+  color: #fff; /* Yazı rengi: Beyaz */
+  box-sizing: border-box; /* Padding ve border'ı genişlik ve yüksekliğe dahil et */
+}
